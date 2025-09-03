@@ -1,19 +1,17 @@
 import React from 'react'
 import Navigator from './components/Navigator';
 import SkillCard from './components/Skillcard';
+import Servicecard from './components/Servicecard';
+import Projectoggle from './components/Projectoggle';
+import Footer from './components/Footer';
 import "./style.css"; 
 function App() {
 
   return (
-    <div className="app">
-      <SkillCard 
-        icon= "./assets/icons/js.svg"
-        icon2="./assets/icons/js.svg"
-        name="JAVASCRIPT & TYPESCRIPT" 
-        description="Building consistent and scalable user interfaces quickly with powerful utility classes and component-based frameworks."
-        /> 
+    <>
+      
 
-    </div>
+    </>
   )
 }
 
