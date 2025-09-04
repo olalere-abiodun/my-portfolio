@@ -3,8 +3,9 @@ import React from "react";
 
 function SkillCard(props) {
   return (
+    
     <div className="skill-container">
-      <div className={`skill-card ${props.className} flex flex-row items-center justify-center text-x font-medium shadow-lg`}>
+      <div className={`skill-card ${props.classname} flex flex-row items-center justify-center text-x font-medium shadow-lg`}>
         <img src={props.icon} alt="skill-icon" className="skill-icon" />
         {props.icon2 && (
           <img src={props.icon2} alt="skill-icon" className="skill-icon" />

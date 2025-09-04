@@ -1,19 +1,15 @@
-import React from 'react'
-import Navigator from './components/Navigator';
-import SkillCard from './components/Skillcard';
-import Servicecard from './components/Servicecard';
-import Projectoggle from './components/Projectoggle';
-import Footer from './components/Footer';
-import "./style.css"; 
+import "./style.css";
+import Hero from "./Hero";
+import Skills from "./Skills";
+import Services from "./Services";
 function App() {
-
   return (
     <>
-      
-
+      <Hero />
+      <Skills />
+      <Services />
     </>
-  )
+  );
 }
 
 export default App;
-

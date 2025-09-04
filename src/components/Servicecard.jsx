@@ -1,16 +1,13 @@
 import React from "react";
 
-function Servicecard() {
+function Servicecard(props) {
   return (
-    <div className="service-card w-[276px] h-[250px] px-[25px] py-[20px]" >
-      <img src="../assets/icons/WebDesign.svg" alt="" />
+    <div className="service-card w-[340px] h-[300px] px-[30px] py-[30px]" >
+      <img src={props.icon} alt="" />
      <div className="flex flex-col text-center items-center gap-[15px]">
-         <h3 className="font-bold text-[16px]">UI/UX Design</h3>
+         <h3 className="font-bold text-[16px]">{props.title}</h3>
       <p className="text-[14px]">
-        Designing intuitive, user-centered interfaces that deliver seamless and
-        engaging experiences.<br/> I focus on usability, accessibility, and aesthetic
-        appeal to ensure products not only look great but also function
-        flawlessly.
+        {props.description}
       </p>
      </div>
     </div>

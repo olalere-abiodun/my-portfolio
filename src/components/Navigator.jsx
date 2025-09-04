@@ -3,7 +3,7 @@ import React from "react";
 function Navigator() {
   return (
     <nav className="navigator">
-      <ul className="flex space-x-2">
+      <ul className="flex space-x-2 pt-4">
         <li>
           <a href="#about" className="text-[#2A5286] font-bold px-3 py-1 border-b-1 border-[#2A5286] hover:border-b-2">
             Home
