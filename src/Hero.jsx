@@ -11,10 +11,10 @@ function Hero() {
           <Button size="medium" value="DOWNLOAD CV" />
         </header>
          <main className="flex flex-col sm:flex-row sm:gap-0 justify-between items-center">
-            <div className="info w-[346px] h-[364px]">
+            <div className="info w-[370px] h-[364px]">
               <h2>Hello I'm</h2>
               <h1>Olalere S. Abiodun</h1>
-              <h2>Web Designer & Web Designer </h2>
+              <h2>Web Designer & Web Developer </h2>
               <p>
                 Passionate about creating beautiful, user-friendly websites that
                 deliver real results. I blend design aesthetics with clean,

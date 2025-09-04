@@ -194,14 +194,14 @@ input:textarea {
   height: 60%;
   background: linear-gradient(to right,#23345D 70%, #4A6EC3 100%);
   opacity: 0;
-  transform: translateX(-100%); /* hidden initially */
+  transform: translateX(-100%); 
   transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
   z-index: 1;
 }
 
 .figma:hover::after {
   opacity: 0.6;
-  transform: translateX(0%); /* slides in */
+  transform: translateX(0%);
 }
 .service-card {
   background-color: #E6E9F7;
@@ -262,26 +262,58 @@ gap: 63px;
 }
 .skills-section {
   width: 100%;
-  height: 474px;
-  padding: 60px 150px;
- 
+  min-height: 474px;
+  display: flex;             
+  flex-direction: column;
+  align-items: center;       
+  justify-content: center;    
+  gap: 20px;                 
 }
+
 .titles {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 0;          
   color: #2A5286;
+  text-align: left ;         
 }
-.skill-cards, .service-cards {
-   display: flex;
-   flex-wrap: wrap;
-  gap: 60px;
+
+.skill-cards,
+.service-cards, .project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  margin: 0;
+  max-width: 1100px;
 }
 .services-container {
-    width: 100%;
-  height: 850px;
-  padding: 60px 150px;
+  width: 100%;
+  min-height: 850px;
+  display: flex;             
+  flex-direction: column;
+  align-items: center;       
+  justify-content: center;    
+  gap: 20px; 
   background-color: #E6E1DB;
+}
+.portfolio-container {
+  width: 100%;
+  display: flex;             
+  flex-direction: column;
+  align-items: center;       
+  justify-content: center;    
+  gap: 20px; 
+  background-color: #E2E8F6;
+}
+.portfolio-container section {
+  display: flex;
+  flex-direction: row;
+  width: 1100px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 
@@ -290,7 +322,7 @@ gap: 63px;
 
 
 
-
+/* 
 
 @media (max-width: 1300px) {
   .hero {
@@ -317,11 +349,11 @@ gap: 63px;
   .info h2 {
     font-size: 20px;
   }
-}
+} */
 
 
 /* Tablets & Mobile Screens (≤ 768px) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hero {
     padding: 40px 20px;
     text-align: center;
@@ -370,10 +402,10 @@ gap: 63px;
     width: 100%;
     max-width: 320px;
   }
-}
+} */
 
 /*  Small Mobile Screens (≤ 480px) */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   body {
     font-size: 14px;
   }
@@ -413,4 +445,4 @@ gap: 63px;
 
 
 
-
+ */
