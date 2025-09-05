@@ -3,6 +3,10 @@ import Hero from "./Hero";
 import Skills from "./Skills";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
+import Hire from "./Hire";
+import Footer from "./components/Footer";
+
+
 function App() {
   return (
     <>
@@ -10,6 +14,8 @@ function App() {
       <Skills />
       <Services />
       <Portfolio />
+      <Hire />
+      <Footer />
       
     </>
   );

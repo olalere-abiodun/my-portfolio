@@ -12,6 +12,9 @@ const ICONS = {
   php: "./assets/icons/phpicon.svg",
   postgre: "./assets/icons/postgre.svg",
   python: "./assets/icons/python.svg",
+  fastapi: "./assets/icons/fastapi.svg",
+  figma: "./assets/icons/figma.svg",
+
 
 
   // Service icons
@@ -124,5 +127,97 @@ const servicedata = [
   },
 ];
 
+const webdev = [
+{
+  id: 1,
+  image: "./assets/images/project1.png",
+  url: "https://kitabservices.com/",
+  icon: ICONS.html,
+  icon2: ICONS.css,
+  icon3: ICONS.js,
+  projectname: "K-I.T.A.B Services",
+  description: " A responsive business website developed for KITAB Services, designed using HTML CSS. The project showcases the company’s consulting, advertising, and property services with a clean, professional design."
+},
+{
+    id: 2,
+  image: "./assets/images/project2.png",
+  url: "https://flushmaster.vercel.app/",
+  icon: ICONS.react,
+  icon2: ICONS.bootstrap,
+  projectname: "FlushMaster",
+  description: "A responsive plumbing services website developed for FlushMaster, showcasing the organization’s range of plumbing solutions, service details, and contact information. Built with React and Bootstrap, the site provides a modern interface that ensures easy navigation and accessibility for clients."
+},
+{
+  id: 3,
+  image: "./assets/images/project3.png",
+  url: "https://kayroute-olalere-sherifdeen-abioduns-projects.vercel.app/",
+  icon: ICONS.html,
+  icon2: ICONS.css,
+  icon3: ICONS.js,
+  projectname: "KAYROUTE LOGISTICS",
+  description: "A responsive logistics website developed for Kayroute Logistics, built with HTML, CSS, and JavaScript. The platform highlights the company’s delivery and transportation services, making it easy for customers to access information, track services, and connect with the business"
+
+}
+]
+const api = [ {
+  id: 1,
+  image: "./assets/images/api.jpg",
+  url: "https://github.com/olalere-abiodun/doctorappointmentAPI",
+  icon: ICONS.fastapi,
+  icon2: ICONS.postgre,
+  projectname: "HOSPITAL MANAGEMENT API",
+  description:"An API build to manage hospital records and doctor's appointment management",
+},
+{
+  id: 2,
+  image: "./assets/images/api.jpg",
+  url: "https://github.com/olalere-abiodun/assignmentSubmission",
+  icon: ICONS.fastapi,
+  icon2: ICONS.postgre,
+  projectname: "ASSIGNMENT SUBMISSION API",
+  description:"An API developed to manage students assignemt submission",
+},
+{
+  id: 3,
+  image: "./assets/images/api.jpg",
+  url: "https://github.com/olalere-abiodun/Swift-Send",
+  icon: ICONS.fastapi,
+  icon2: ICONS.postgre,
+  projectname: "SWIFT SEND API",
+  description:"A Delivery application designed to make sending and receiving packages simple, fast, and reliable. ",
+},
+{
+  id: 4,
+  image: "./assets/images/api.jpg",
+  url:"https://github.com/olalere-abiodun/Currency_converter",
+  icon: ICONS.fastapi,
+  icon2: ICONS.postgre,
+  projectname: "cURRENCY CONVERTER API",
+  description:"A simple and efficient Currency Converter API built with FastAPI. It allows users to convert between different currencies in real time, with alert functionality to notify users when their target exchange rate is reached. ",
+},
+{
+  id: 5,
+  image: "./assets/images/api.jpg",
+  url: "https://github.com/olalere-abiodun/Crowdsourced-crime-alert",
+  icon: ICONS.fastapi,
+  icon2: ICONS.postgre,
+  projectname: "CROWD SOURCE CRIME ALERT",
+  description: "A location-based crime alert system built with FastAPI and PostgreSQL. The platform leverages crowdsourced reports to notify users about nearby incidents in real time, promoting community safety and quick response through reliable data sharing."
+},
+
+]
+const ux = [
+  {
+    id: 1,
+    image: "./assets/images/filecover.png",
+    url: "https://www.figma.com/proto/MJ8nd3Bjc5YCDhogABSv1H/Task-Flow?node-id=253-47&t=eLPxPjbg63Mp3ROI-1",
+    icon: ICONS.html,
+    projectname: "AbbyTech Joke",
+    description: "Just A Placeholder"
+  
+
+  }
+]
+
 export default skillsdata;
-export { servicedata };
+export { servicedata, webdev, api, ux };

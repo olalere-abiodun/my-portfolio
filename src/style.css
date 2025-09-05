@@ -60,10 +60,6 @@ input:textarea {
   transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
   z-index: 1;
   
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bolder;  */
 }
 
 .javascript:hover::after {
@@ -215,15 +211,15 @@ input:textarea {
 }
 .hero {
   background-color: #E2E8F6;
-  height: 620px;
-  padding-top: 47px;
+  height: 585px;
+  padding-top: 20px;
   padding-left: 150px;
   padding-right: 150px;
+  box-sizing: border-box;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
 
-}
-.hero main {
-  margin-top: 8px;
-}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -257,7 +253,7 @@ gap: 63px;
 .hero-social button {
   margin: auto;
 }
-.social-icons {
+.social-icons, .contact-icon {
   color: #2B5288
 }
 .skills-section {
@@ -307,6 +303,22 @@ gap: 63px;
   gap: 20px; 
   background-color: #E2E8F6;
 }
+.hire-container {
+  width: 100%;
+  height: 450px;
+  display: flex;             
+  flex-direction: column;
+  align-items: center;       
+  justify-content: center;    
+  gap: 20px; 
+  background-color: #E6E1DB;
+}
+.hire-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1100px;
+}
 .portfolio-container section {
   display: flex;
   flex-direction: row;
@@ -315,11 +327,82 @@ gap: 63px;
   justify-content: space-between;
   margin-bottom: 20px;
 }
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.footer {
+  width: 100%;
+
+}
 
 
+@media (max-width: 1024px) {
+  .hero {
+    padding: 20px 80px;
+    height: auto; 
+  }
+}
+
+/* Small screens (phones, ≤768px) */
+@media (max-width: 768px) {
+  .hero {
+    padding: 15px 30px;
+    height: auto;
+  }
+}
 
 
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    height: auto;
+  }
+  .hero main {
+    margin-top: 20px;
+  }
+  .info {
+    align-items: center;
+    gap:8px;
+    height: 255px !important;
+  }
+  button.medium {
+    padding: 10px 22px;
+    font-size: 11px;
+  }
+  button.small {
+   padding: 10px;
+   font-size: 11px;
+  }
 
+   .info h2 {
+    font-size: 18px;
+  }
+
+  .info h1 {
+    font-size: 24px;
+  }
+
+  .info p {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .hero-social {
+    gap: 20px; /* reduce spacing */
+  }
+
+  .hero-social button {
+    width: 100%; /* button spans full width on mobile */
+    max-width: 200px; /* prevent it from being too wide */
+  }
+}
 
 
 /* 
