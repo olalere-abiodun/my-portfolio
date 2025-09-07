@@ -12,7 +12,7 @@ button {
     outline: none;
     cursor: pointer;
      width: auto;
-  align-self: flex-start; /* or center if you want */
+  align-self: flex-start; 
 }
 
 input:textarea {
@@ -76,14 +76,14 @@ input:textarea {
   height: 100%;
   background: linear-gradient(to right,#23345D 70%, #4A6EC3 100%);
   opacity: 0;
-  transform: translateX(-100%); /* hidden initially */
+  transform: translateX(-100%); 
   transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
   z-index: 1;
 }
 
 .html:hover::after {
   opacity: 0.6;
-  transform: translateX(0%); /* slides in */
+  transform: translateX(0%); 
 }
 
 .bootstrap::after {
@@ -95,14 +95,14 @@ input:textarea {
   height: 100%;
   background: linear-gradient(to right,#23345D 70%, #4A6EC3 100%);
   opacity: 0;
-  transform: translateX(-100%); /* hidden initially */
+  transform: translateX(-100%); 
   transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
   z-index: 1;
 }
 
 .bootstrap:hover::after {
   opacity: 0.6;
-  transform: translateX(0%); /* slides in */
+  transform: translateX(0%); 
 }
 
 .react::after {
@@ -114,14 +114,14 @@ input:textarea {
   height: 100%;
   background: linear-gradient(to right,#23345D 70%, #4A6EC3 100%);
   opacity: 0;
-  transform: translateX(-100%); /* hidden initially */
+  transform: translateX(-100%); 
   transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
   z-index: 1;
 }
 
 .react:hover::after {
   opacity: 0.6;
-  transform: translateX(0%); /* slides in */
+  transform: translateX(0%);
 }
 
 .api::after {
@@ -133,14 +133,14 @@ input:textarea {
   height: 100%;
   background: linear-gradient(to right,#23345D 70%, #4A6EC3 100%);
   opacity: 0;
-  transform: translateX(-100%); /* hidden initially */
+  transform: translateX(-100%); 
   transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
   z-index: 1;
 }
 
 .api:hover::after {
   opacity: 0.6;
-  transform: translateX(0%); /* slides in */
+  transform: translateX(0%); 
 }
 
 .wordpress::after {
@@ -152,14 +152,14 @@ input:textarea {
   height: 100%;
   background: linear-gradient(to right,#23345D 70%, #4A6EC3 100%);
   opacity: 0;
-  transform: translateX(-100%); /* hidden initially */
+  transform: translateX(-100%); 
   transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
   z-index: 1;
 }
 
 .wordpress:hover::after {
   opacity: 0.6;
-  transform: translateX(0%); /* slides in */
+  transform: translateX(0%); 
 }
 
 .digital::after {
@@ -171,14 +171,14 @@ input:textarea {
   height: 100%;
   background: linear-gradient(to right,#23345D 70%, #4A6EC3 100%);
   opacity: 0;
-  transform: translateX(-100%); /* hidden initially */
+  transform: translateX(-100%); 
   transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
   z-index: 1;
 }
 
 .digital:hover::after {
   opacity: 0.6;
-  transform: translateX(0%); /* slides in */
+  transform: translateX(0%); 
 }
 
 .figma::after {
@@ -207,11 +207,12 @@ input:textarea {
   line-height: 1.3 ;
   font-weight: 500;
   line-height: 25px;
-  /* border: 2px solid red; */
+
 }
 .hero {
   background-color: #E2E8F6;
   height: 585px;
+  width: 100%;
   padding-top: 20px;
   padding-left: 150px;
   padding-right: 150px;
@@ -244,7 +245,7 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   line-height: 20px;
 }
 .hero-social {
-width: 100%;
+
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -258,12 +259,15 @@ gap: 63px;
 }
 .skills-section {
   width: 100%;
-  min-height: 474px;
+  min-height: 400px;
   display: flex;             
   flex-direction: column;
   align-items: center;       
   justify-content: center;    
-  gap: 20px;                 
+  gap: 10px;   
+  padding:20px; 
+   box-sizing: border-box;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);          
 }
 
 .titles {
@@ -271,7 +275,7 @@ gap: 63px;
   font-weight: 700;
   margin-bottom: 0;          
   color: #2A5286;
-  text-align: left ;         
+  text-align: center;         
 }
 
 .skill-cards,
@@ -286,13 +290,16 @@ gap: 63px;
 }
 .services-container {
   width: 100%;
-  min-height: 850px;
+  min-height: 800px;
   display: flex;             
   flex-direction: column;
   align-items: center;       
   justify-content: center;    
   gap: 20px; 
   background-color: #E6E1DB;
+  padding: 20px;
+   box-sizing: border-box;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 .portfolio-container {
   width: 100%;
@@ -302,16 +309,20 @@ gap: 63px;
   justify-content: center;    
   gap: 20px; 
   background-color: #E2E8F6;
+ box-sizing: border-box;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 .hire-container {
   width: 100%;
-  height: 450px;
+  min-height: 450px;
   display: flex;             
   flex-direction: column;
   align-items: center;       
   justify-content: center;    
   gap: 20px; 
   background-color: #E6E1DB;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .hire-card {
   display: flex;
@@ -338,25 +349,61 @@ gap: 63px;
 
 }
 
-
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .hero {
-    padding: 20px 80px;
-    height: auto; 
-  }
-}
-
-/* Small screens (phones, ≤768px) */
-@media (max-width: 768px) {
-  .hero {
-    padding: 15px 30px;
+    padding-left: 60px;
+    padding-right: 60px;
     height: auto;
   }
+
+  .info h2 {
+    font-size: 20px;
+  }
+
+  .info h1 {
+    font-size: 28px;
+  }
+
+  .info p {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .skill-cards,
+  .service-cards,
+  .project-cards {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .portfolio-container section {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .hire-card {
+    flex-direction: column;
+    width: 100%;
+    gap: 35px;
+    justify-content: center;
+    align-items: center
+  ;
+  }
+
+  .contacts {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 
-@media (max-width: 480px) {
+
+@media (max-width: 540px) {
   .hero {
+    width: 100%;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -364,21 +411,15 @@ gap: 63px;
     height: auto;
   }
   .hero main {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .info {
     align-items: center;
     gap:8px;
-    height: 255px !important;
+    height: 320px ;
   }
-  button.medium {
-    padding: 10px 22px;
-    font-size: 11px;
-  }
-  button.small {
-   padding: 10px;
-   font-size: 11px;
-  }
+  
+
 
    .info h2 {
     font-size: 18px;
@@ -389,143 +430,47 @@ gap: 63px;
   }
 
   .info p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
     text-align: center;
   }
 
   .hero-social {
-    gap: 20px; /* reduce spacing */
-  }
-
-  .hero-social button {
-    width: 100%; /* button spans full width on mobile */
-    max-width: 200px; /* prevent it from being too wide */
-  }
-}
-
-
-/* 
-
-@media (max-width: 1300px) {
-  .hero {
-    padding-top: 30px;
-    padding-left: 80px;
-    padding-right: 80px;
-    height: auto;
-  }
-
-  .skills-section, .services-container  {
-    padding: 60px 120px;
-    height: auto;
-  }
-
-  .skill-container,
-  .skill-card, .service-card {
-    width: 300px;
-  }
-
-  .info h1 {
-    font-size: 32px;
-  }
-
-  .info h2 {
-    font-size: 20px;
-  }
-} */
-
-
-/* Tablets & Mobile Screens (≤ 768px) */
-/* @media (max-width: 768px) {
-  .hero {
-    padding: 40px 20px;
-    text-align: center;
-    height: auto;
-  }
-
-  .hero main {
     margin-top: 20px;
+    gap: 20px; 
   }
 
-  .info {
-    align-items: center;
-  }
 
-  .info h1 {
-    font-size: 26px;
-  }
-
-  .info h2 {
-    font-size: 18px;
-  }
-
-  .info p {
-    font-size: 13px;
-    text-align: center;
-  }
-
-  .hero-social {
-    flex-direction: row;
+  .skill-cards,
+  .service-cards,
+  .project-cards {
+    justify-content: center;  
     gap: 30px;
   }
-
-  .skills-section {
-    padding: 40px 20px;
-    height: auto;
+  .titles {
+    font-size: 22px;
+    text-align: center;
   }
-
-  .skill-cards {
+  .portfolio-container {
+    padding-block: 30px;
+  }
+  .portfolio-container section {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-  }
+    gap:20px;
 
-  .skill-container,
-  .skill-card {
+  }
+  .contacts{
+    padding: 20px;
+    box-sizing: border-box;
     width: 100%;
-    max-width: 320px;
   }
-} */
-
-/*  Small Mobile Screens (≤ 480px) */
-/* @media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-
-  .hero {
-    padding: 20px 15px;
-  }
-
-  .info h1 {
-    font-size: 22px;
-  }
-
-  .info h2 {
-    font-size: 16px;
-  }
-
-  .info p {
-    font-size: 12px;
-    line-height: 1.4;
-  }
-
-  .skill-container,
-  .skill-card {
-    width: 100%;
-    height: auto;
-  }
-
-  .skill-container p {
-    font-size: 12px;
-  }
-
-  .skills-section {
-    padding: 20px 15px;
+ .hire-card {
+    flex-direction: column;   
+    width: 100%;              
+    gap: 20px;                
   }
 }
 
 
 
-
- */

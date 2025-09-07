@@ -10,18 +10,18 @@ function Hire() {
     return(
         <div className="hire-container">
             <h1 className="titles">HIRE ME</h1>
-            <div className="hire-card flex justify-between">
+            <div className="hire-card flex flex-col gap-8 lg:flex-row justify-between">
                 <section className="contacts">
-                    <div className="w-[164px]">
+                    <div className="w-full sm:w-[164px]">
                         <section className="contact-icon flex justify-center items-center"><FontAwesomeIcon icon={faPhone} shake /> <span className="font-bold ml-5 text[16px]">PHONE</span></section>
                         <section className="flex flex-col gap-4 mt-7 font-medium text-[14px] border-r-2">
                             <a href="tel:+2349068877855">+2349068877855</a>
                             <a href="tel:+22990085518">+22990085518</a>
                         </section>
                     </div>
-                    <div className="w-[224px]">
+                    <div className="w-full sm:w-[224px]">
                         <section className="contact-icon flex justify-center items-center"><FontAwesomeIcon icon={faEnvelope} shake /> <span className="font-bold ml-5">EMAIL</span></section>
-                         <section className="flex flex-col gap-4 mt-7 ml-5 font-medium text-[14px]">
+                         <section className="flex flex-col gap-4 mt-7 ml-5 font-medium text-[12px] sm:text-[14px]">
                             <a href="mailto:abbytechconsult@gmail.com">abbytechconsult@gmail.com</a>
                             <a href="mailto:shervie20@gmail.com">shervie20@gmail.com</a>
                         </section>

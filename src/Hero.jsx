@@ -6,7 +6,7 @@ function Hero() {
   return (
     
       <div className="hero">
-       <header className="flex flex-col sm:flex-row gap-3 items-center justify-center sm:justify-end w-full">
+       <header className="flex flex-col sm:flex-row gap-5 items-center justify-center sm:justify-end w-full">
   <div className="flex justify-center w-full sm:w-auto">
     <Navigator />
   </div>
@@ -14,7 +14,7 @@ function Hero() {
     <Button size="medium" value="DOWNLOAD CV" />
   </div>
 </header>
-            <main className="flex flex-col sm:flex-row sm:gap-0 justify-between items-center">
+            <main className="flex flex-col gap-2 sm:flex-row sm:gap-0 justify-between items-center">
             <div className="info w-[370px] h-[364px]">
               <h2>Hello I'm</h2>
               <h1>Olalere S. Abiodun</h1>
