@@ -6,7 +6,7 @@ function Navigator() {
   <ul className="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-6 pt-4">
     <li>
       <a
-        href="/"
+        href="#home"
         className="text-[#2A5286] font-bold text-sm sm:text-base md:text-lg px-2 sm:px-3 py-1 border-b border-[#2A5286] hover:border-b-2"
       >
         Home
@@ -22,7 +22,7 @@ function Navigator() {
     </li>
     <li>
       <a
-        href="#contact"
+        href="#services"
         className="text-[#2A5286] font-bold text-sm sm:text-base md:text-lg px-2 sm:px-3 py-1 border-b border-[#2A5286] hover:border-b-2"
       >
         Services
@@ -30,7 +30,7 @@ function Navigator() {
     </li>
     <li>
       <a
-        href="#"
+        href="#projects"
         className="text-[#2A5286] font-bold text-sm sm:text-base md:text-lg px-2 sm:px-3 py-1 border-b border-[#2A5286] hover:border-b-2"
       >
         Portfolio
@@ -38,10 +38,10 @@ function Navigator() {
     </li>
     <li>
       <a
-        href="#"
+        href="#contact"
         className="text-[#2A5286] font-bold text-sm sm:text-base md:text-lg px-2 sm:px-3 py-1 border-b border-[#2A5286] hover:border-b-2"
       >
-        Hire Me
+        Contact Me
       </a>
     </li>
   </ul>

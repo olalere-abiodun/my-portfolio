@@ -57,6 +57,13 @@ const skillsdata = [
   },
   {
     id: 4,
+    name: "FIGMA",
+    icon: ICONS.figma,
+    classname:"figma",
+    description: "Designing intuitive and responsive user interfaces, creating prototypes, and collaborating effectively on design projects with Figma’s powerful tools.",
+  },
+  {
+    id: 5,
     name: "WORDPRESS",
     icon: ICONS.wordpress,
     classname: "wordpress",
@@ -64,7 +71,7 @@ const skillsdata = [
       "Designing and customizing WordPress themes and plugins to deliver user-friendly, content-managed websites.",
   },
   {
-    id: 5,
+    id: 6,
     name: "API DEVELOPMENT",
     icon: ICONS.api,
     classname: "api",
@@ -72,8 +79,8 @@ const skillsdata = [
       "Creating and integrating robust, secure APIs for seamless data exchange between front-end and back-end systems.",
   },
   {
-    id: 6,
-    name: "DIGITAL MARKETING",
+    id: 7,
+    name: "SEO",
     icon: ICONS.seo,
     classname: "digital",
     description:
@@ -85,38 +92,44 @@ const skillsdata = [
 const servicedata = [
   {
     id: 1,
+        icon: ICONS.code,
+    title: "WEB DEVELOPMENT",
+    description:
+      "I build responsive, user-focused websites that are fast, secure, and scalable. From landing pages to complex apps, I use modern technologies and clean code to help you achieve your business goals.",
+
+},
+  {
+    id: 2,
+        icon: ICONS.positiveDynamic,
+    title: "API DEVELOPMENT",
+    description:
+      "I optimize websites to rank higher on search engines, improving visibility, driving organic traffic, and helping you reach your target audience effectively.",
+
+  },
+  {
+    id: 3,
     icon: ICONS.webDesign,
     title: "UI/UX",
     description:
       "Designing intuitive, user-centered interfaces that deliver seamless and engaging experiences. I focus on usability, accessibility, and aesthetic appeal to ensure products not only look great but also function flawlessly.",
-  },
+  
+
+},
   {
-    id: 2,
-    icon: ICONS.code,
-    title: "WEB DEVELOPMENT",
-    description:
-      "I build responsive, user-focused websites that are fast, secure, and scalable. From landing pages to complex apps, I use modern technologies and clean code to help you achieve your business goals.",
-  },
-  {
-    id: 3,
-    icon: ICONS.wp,
+    id: 4,
+
+        icon: ICONS.wp,
     title: "WORDPRESS",
     description:
       "I create and customize WordPress websites that are easy to manage, visually appealing, and optimized for performance. From theme development to plugin integration, I deliver flexible solutions tailored to your needs.",
   },
   {
-    id: 4,
-    icon: ICONS.commercial,
-    title: "DIGITAL MARKETING",
+    id: 5,
+        icon: ICONS.commercial,
+    title: "SEO",
     description:
       "I help businesses grow online through targeted digital strategies, including SEO, social media marketing, and content campaigns that drive traffic and boost engagement.",
-  },
-  {
-    id: 5,
-    icon: ICONS.positiveDynamic,
-    title: "API DEVELOPMENT",
-    description:
-      "I optimize websites to rank higher on search engines, improving visibility, driving organic traffic, and helping you reach your target audience effectively.",
+  
   },
   {
     id: 6,

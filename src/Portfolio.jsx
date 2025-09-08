@@ -12,7 +12,7 @@ function Portfolio() {
     return [];
   };
     return (
-    <div className="portfolio-container py-[50px]">
+    <div className="portfolio-container py-[50px]" id="projects">
       <section className="flex justify-between items-center">
         <h1 className="titles">PROJECTS</h1>
         <Projectoggle active={active} setActive={setActive} />

@@ -11,7 +11,7 @@ function Portfoliocard(props) {
             rel="noopener noreferrer"
           >
             <img
-              class="h-55 w-full object-cover rounded"
+              className="h-55 w-full object-cover rounded"
               src={props.image}
               alt="kitab"
             />
