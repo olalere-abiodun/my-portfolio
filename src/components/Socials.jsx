@@ -1,10 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faTwitter, faInstagram, faLinkedin, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faTwitter, faInstagram, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function Socials({ animation }) {
   return (
     <div className="social-icons flex gap-4 text-xl">
+      <a href="https://wa.me/2349068877855?text=Hello%20Olalere,%20I%20saw%20your%20portfolio!" target="_blank">
+        <FontAwesomeIcon icon={faWhatsapp} {...{[animation]: true}} />
+      </a>
       <a href="https://github.com/olalere-abiodun" target="_blank" aria-label="GitHub">
         <FontAwesomeIcon icon={faGithub} {...{ [animation]: true }} />
       </a>
