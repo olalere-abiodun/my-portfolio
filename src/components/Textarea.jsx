@@ -13,7 +13,7 @@ function Textarea(props) {
   h-[90px] sm:h-[100px] md:h-[111px]
   max-w-full
 "
-    require/>
+    required />
   );
 }
 

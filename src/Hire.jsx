@@ -15,10 +15,10 @@ function Hire() {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_m4he469",   // from EmailJS
-      "template_ea575ut",  // from EmailJS
+        import.meta.env.VITE_EMAILJS_SERVICE_KEY,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       form.current,
-      "Mytzhc_Ggxzd-P_Ab"    // from EmailJS
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY  
     ).then(
       (result) => {
         alert("Message sent successfully ✅");
