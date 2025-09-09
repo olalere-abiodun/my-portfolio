@@ -48,7 +48,7 @@ function Hero() {
               <h2>Web Designer & Web Developer </h2>
               <p>
                 Passionate about creating beautiful, user-friendly web applications that
-                deliver real results. I blend design aesthetics with clean,
+                deliver real results. I blend design aesthetics with clean and
                 efficient code to bring ideas to life on the web.
               </p>
               <section className="hero-social">

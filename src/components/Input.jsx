@@ -4,6 +4,7 @@ function Input(props) {
   return (
     <input
       type={props.type}
+      name={props.name}
       placeholder={props.placeholder}
       className="
   bg-gray-100 p-2 border-2 border-gray-800 
@@ -12,7 +13,7 @@ function Input(props) {
   w-[331px] sm:w-[360px] md:w-[420px] lg:w-[480px] 
   max-w-full
 "
-    />
+   required />
   );
 }
 

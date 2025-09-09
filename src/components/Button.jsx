@@ -7,18 +7,22 @@ const Button = (props) => {
       large: "py-[13px] px-[144.1px] sm:px-[160px] md:px-[219px] lg:px-[219px]",
     }
   return (
-    <button className={`
-      ${props.size}
+    <button
+  className={`
+    ${props.size}
     bg-[#2B5288]
-     text-[#FFFFFF]
-      font-bold 
-      ${sizeClass[props.size]} 
-      rounded-[10px] 
-      w-auto 
-      self-center
-      `} onClick={props.onClick}>
-      {props.value}
-    </button>
+    text-[#FFFFFF]
+    font-bold 
+    ${sizeClass[props.size]} 
+    rounded-[10px] 
+    w-auto 
+    self-center
+  `}
+  type={props.type}   
+  onClick={props.onClick}
+>
+  {props.value}       
+</button>
   );
 };
 

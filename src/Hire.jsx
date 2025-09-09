@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Input from "./components/Input";
 import Textarea from "./components/Textarea";
 import Button from "./components/Button";
 import Socials from "./components/Socials";
+import emailjs from "emailjs-com";
 
 
 function Hire() {
+     const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_m4he469",   // from EmailJS
+      "template_ea575ut",  // from EmailJS
+      form.current,
+      "Mytzhc_Ggxzd-P_Ab"    // from EmailJS
+    ).then(
+      (result) => {
+        alert("Message sent successfully ✅");
+      },
+      (error) => {
+        alert("Failed to send ❌: " + error.text);
+      }
+    );
+  };
     return(
         <div className="hire-container" id="contact">
             <h1 className="titles">CONTACT ME</h1>
@@ -34,24 +54,28 @@ function Hire() {
             
 
                 </section>
-                <section className="">
-                    <form className="flex flex-col sm:w-[480px] ">
+                <section >
+                    <form ref={form} onSubmit={sendEmail} className="flex flex-col sm:w-[480px] ">
                         <Input 
                             type="text"
                             placeholder="FullName"
+                            name="FullName"
 
                         />
                         <Input 
                             type="email"
                             placeholder="Email"
+                            name="Email"
 
                         />
                         <Textarea
                             placeholder="Message"
+                            name="Message"
                         />
                         <Button 
                             size="large"
                             value="SEND"
+                            type="submit"
                         />
                         
                     </form>

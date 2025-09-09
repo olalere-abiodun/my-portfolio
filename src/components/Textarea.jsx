@@ -4,6 +4,7 @@ function Textarea(props) {
   return (
     <textarea
       placeholder={props.placeholder}
+      name={props.name}
       className="
   resize-none bg-gray-100 p-2 border-2 border-gray-800 
   focus:outline-none focus:ring-2 focus:ring-blue-500 
@@ -12,7 +13,7 @@ function Textarea(props) {
   h-[90px] sm:h-[100px] md:h-[111px]
   max-w-full
 "
-    />
+    require/>
   );
 }
 
