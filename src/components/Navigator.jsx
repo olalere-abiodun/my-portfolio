@@ -39,7 +39,7 @@ function Navigator() {
     <li>
       <a
         href="#contact"
-        className="text-[#2A5286] font-bold text-sm sm:text-base md:text-lg px-2 sm:px-3 py-1 border-b border-[#2A5286] hover:border-b-2"
+        className="hide text-[#2A5286] font-bold text-sm sm:text-base md:text-lg px-2 sm:px-3 py-1 border-b border-[#2A5286] hover:border-b-2"
       >
         Contact Me
       </a>
