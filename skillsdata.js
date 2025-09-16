@@ -205,18 +205,19 @@ const api = [ {
   url:"https://github.com/olalere-abiodun/Currency_converter",
   icon: ICONS.fastapi,
   icon2: ICONS.postgre,
-  projectname: "cURRENCY CONVERTER API",
+  projectname: "CURRENCY CONVERTER API",
   description:"A simple and efficient Currency Converter API built with FastAPI. It allows users to convert between different currencies in real time, with alert functionality to notify users when their target exchange rate is reached. ",
 },
 {
   id: 5,
   image: "./assets/images/api.jpg",
-  url: "https://github.com/olalere-abiodun/Crowdsourced-crime-alert",
+  url: "https://github.com/olalere-abiodun/Crowdsourced-crime-alert/blob/master/README.md",
   icon: ICONS.fastapi,
   icon2: ICONS.postgre,
   projectname: "CROWD SOURCE CRIME ALERT",
   description: "A location-based crime alert system built with FastAPI and PostgreSQL. The platform leverages crowdsourced reports to notify users about nearby incidents in real time, promoting community safety and quick response through reliable data sharing."
 },
+
 
 ]
 const ux = [
