@@ -1,21 +1,21 @@
 import React from "react";
-
+import { ArrowUpRightIcon } from "@heroicons/react/24/solid"
 function Portfoliocard(props) {
   return (
-    <div className="w-[340px] h-[490px] overflow-hidden rounded-xl bg-white shadow ">
+    <div className="relative w-[340px] h-[490px] overflow-hidden rounded-xl bg-white shadow group">
       <div className="flex flex-col">
         <div className="shrink-0 p-3 ">
-          <a
+          {/* <a
             href={props.url}
             target="_blank"
             rel="noopener noreferrer"
-          >
+          > */}
             <img
               className="h-55 w-full object-cover rounded"
               src={props.image}
               alt="kitab"
             />
-          </a>
+          {/* </a> */}
         </div>
         <div className="pt-0 px-5 pb-5 ">
           <div className="text-sm mb-2 font-semibold tracking-wide text-[#2A5286] uppercase">
@@ -31,6 +31,19 @@ function Portfoliocard(props) {
           </p>
         </div>
       </div>
+
+       {/* Overlay */}
+       <a
+            href={props.url}
+            target="_blank"
+            rel="noopener noreferrer">
+  <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <span className="text-white text-lg font-semibold tracking-widest">
+      EXPLORE
+      <ArrowUpRightIcon className="h-5 w-5 inline-block ml-2" />
+    </span>
+  </div>
+  </a>
     </div>
   );
 }
